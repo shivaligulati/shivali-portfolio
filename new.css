@@ -1,0 +1,30 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+#signature {
+  height: 130px;
+  width: 350px;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+.blogposts {
+    width:33%;
+    float:left;
+    margin:0px;
+    text-align:center;
+    padding:0px;
+}
+
+.postimg {
+  width: 90%;
+  height: auto;
+}
+
+.titleofpost{
+  padding: 3%;
+  font-size: 170%;
+}
