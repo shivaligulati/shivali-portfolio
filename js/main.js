@@ -40,10 +40,10 @@ $(window).on('load', function() {
 	/*------------------
 		Background set
 	--------------------*/
-	$('.set-bg').each(function() {
-		var bg = $(this).data('setbg');
-		$(this).css('background-image', 'url(' + bg + ')');
-	});
+	// $('.set-bg').each(function() {
+	// 	var bg = $(this).data('setbg');
+	// 	$(this).css('background-image', 'url(' + bg + ')');
+	// });
 
 
 
@@ -69,11 +69,11 @@ $(window).on('load', function() {
 	/*------------------
 		Popup
 	--------------------*/
-	$('.portfolio-item').magnificPopup({
-		type: 'image',
-		mainClass: 'img-popup-warp',
-		removalDelay: 400,
-	});
+	// $('.portfolio-item').magnificPopup({
+	// 	type: 'image',
+	// 	mainClass: 'img-popup-warp',
+	// 	removalDelay: 400,
+	// });
 
 
 	/*------------------

@@ -78,7 +78,13 @@ ol {
 
 .section-title {
   font-size: 60px;
+  animation: animated-text 1.5s steps(100,end) 1s 1 normal both;
 }
+
+/* @keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%;}
+} */
 
 .section-title span {
   color: #979797;
@@ -490,7 +496,7 @@ ol {
   display: block;
 }
 
-.img-popup-warp .mfp-content {
+ .img-popup-warp .mfp-content {
   opacity: 0;
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -505,8 +511,8 @@ ol {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-}
-
+} 
+ 
 /*------------------------
     Footer Section
 --------------------------*/
