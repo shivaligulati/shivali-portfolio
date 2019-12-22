@@ -1,5 +1,3 @@
-<!-- APPLE LINKS FOR PROJECTS TO DO CONVERT FILES TO USDZ -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,11 +20,17 @@
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="new.css" />
     <link rel="stylesheet" href="demo-styles.css" />
     <!--     	<link rel="stylesheet" href="new.css"/>
      -->
@@ -53,10 +57,17 @@
       src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
       defer
     ></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
   <body>
     <!-- Page Preloder -->
-    <!-- Page Preloder -->
+    <!-- 	<div id="preloder">
+		<div class="loader"></div>
+	</div> -->
 
     <!-- header section start -->
     <header class="header-section">
@@ -68,14 +79,18 @@
             </div>
           </div>
           <div class="col-lg-8 col-md-9">
-					<a href="https://drive.google.com/file/d/17MAus_iRLOWFV8MYxyWErZWGBTmKJE7f/view?usp=sharing" class="site-btn header-btn">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/17MAus_iRLOWFV8MYxyWErZWGBTmKJE7f/view?usp=sharing"
+              class="site-btn header-btn"
+              >Resume</a
+            >
             <nav class="main-menu">
               <ul>
                 <li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="cad.html">CAD</a></li>
-              <li><a href="code.html">Code</a></li>
-              <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cad.html">CAD</a></li>
+                <li><a href="code.html">Code</a></li>
+                <li><a href="blog.html">Blog</a></li>
               </ul>
             </nav>
           </div>
@@ -85,312 +100,387 @@
         <i class="fa fa-bars"></i>
       </div>
     </header>
+    <!-- header section end -->
 
+    <!-- intro section start -->
     <section class="intro-section">
-		<div class="container text-center">
-			<div class="row">
-				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title">  🔩 CAD Playground  </h2>
-          <h4>3D objects I've made using AutoCAD</h4>
-				</div>
-			</div>
-		</div>
-	</section>
-
-    <center><div class="page-section">
-      <div class="container">
-        <div class="some-page-wrapper">
-          <div class="row">
-            <div class="column">
-              <div class="blue-column">
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined.glb?v=1576704039787"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#45AAB4"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/xmasornament.html"><h2>Christmas Ornament</h2></a>
-        
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(13).glb?v=1576709260228"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#206491"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/solarcargear.html"><h2>Solar Car Gear</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                
-                 <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(12).glb?v=1576708966502"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#FE7A66"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/tape.html"><h2>Cassette Tape Key Chain</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(14).glb?v=1576709350443"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#45AAB4"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/polarflower.html"><h2>Polar Flower</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(9).glb?v=1576708571559"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#206491"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/eaton.html"><h2>Eaton Adjusting Arm</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(8).glb?v=1576708492127"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#FE7A66"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                      <a class = "cadlinks" href="https://shivaligulati.glitch.me/stool.html"><h2>Kitchen Stool</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-              </div>
-            </div>
-            
-            <div class="column">
-              <div class="green-column">
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an top"
-                    background-color="#038DB2"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/battletop.html"><h2>Battle Top</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(4).glb?v=1576707943030"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#F9637C"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/tinilego.html"><h2>1 X 1 Lego Block</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(15).glb?v=1576728038065"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#FBB45C"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/vase.html"><h2>Mother's Day Vase</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(6).glb?v=1576708255783"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#038DB2"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/paperclip.html"><h2>Renewable Paper Clip</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(10).glb?v=1576708621487"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#F9637C"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/clyde.html"><h2>Clyde Union Mount Pump</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                <div id="card">
-                  <!-- All you need to put beautiful, interactive 3D content on your site: -->
-                  <model-viewer
-                    src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(11).glb?v=1576708890160"
-                    ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
-                    alt="A 3D model of an ornament"
-                    background-color="#FBB45C"
-                    shadow-intensity="1"
-                    camera-controls
-                    interaction-prompt="auto"
-                    auto-rotate
-                    ar
-                    magic-leap
-                  >
-                  </model-viewer>
-                  <section class="attribution">
-                    <span>
-                     <a class = "cadlinks" href="https://shivaligulati.glitch.me/3dlego.html"><h2>Lego With 3D Text</h2></a>
-                    </span>
-                  </section>
-                </div>
-                
-                
-              </div>
-            </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <h2 class="section-title">🔩 CAD Playground</h2>
+            <h4>3D objects I've made using AutoCAD</h4>
           </div>
         </div>
       </div>
-    </div></center>
+    </section>
+    <!-- intro section end -->
 
+    <!-- portfolio section start -->
+    <center>
+      <section class="portfolio-section">
+        <div class="container">
+          <ul class="portfolio-filter controls">
+            <li class="control" data-filter="all">All</li>
+            <li class="control" data-filter=".web">
+              Introduction To Engineering
+            </li>
+            <li class="control" data-filter=".digital">
+              Exploring Engineering
+            </li>
+            <li class="control" data-filter=".rened">Freelance</li>
+            <!-- 				<li class="control" data-filter=".brand">Favorit</li> -->
+          </ul>
+        </div>
+        <div class="container-fluid p-md-0 ">
+          <div class="row portfolios-area">
+            <div class="mix col-lg-6 col-md-6 digital">
+              <a
+                href="https://shivaligulati.glitch.me/xmasornament.html"
+                class="portfolio-item"
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined.glb?v=1576704039787"
+                  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+                  alt="A 3D model of an ornament"
+                  background-color="#45AAB4"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Christmas Ornament</h2>
+                </div>
+              </a>
+            </div>
+
+            <div class="mix col-lg-6 col-md-6 digital">
+              <a
+                href="https://shivaligulati.glitch.me/battletop.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+                  alt="A 3D model of a battle top"
+                  background-color="#038DB2"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Battle Top</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/solarcargear.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(13).glb?v=1576709260228"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of an gear"
+                  background-color="#206491"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Solar Car Gear</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 digital">
+              <a
+                href="https://shivaligulati.glitch.me/paperclip.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(4).glb?v=1576707943030"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a 1 x 1 lego block"
+                  background-color="#F9637C"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See 1 X 1 Lego</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/vase.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(15).glb?v=1576728038065"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a vase"
+                  background-color="#FBB45C"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Mother's Day Vase</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-12 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/3dlego.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(11).glb?v=1576708890160"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a lego with 3d text"
+                  background-color="#FE7A66"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Lego With 3D Text</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-6 col-md-6 rened">
+              <a
+                href="https://shivaligulati.glitch.me/polarflower.html"
+                class="portfolio-item"
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(14).glb?v=1576709350443"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a polar flower"
+                  background-color="#45AAB4"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Polar Flower</h2>
+                </div>
+              </a>
+            </div>
+
+            <div class="mix col-lg-6 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/paperclip.html"
+                class="portfolio-item"
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(6).glb?v=1576708255783"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a paperclip"
+                  background-color="#038DB2"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Renewable Paperclip</h2>
+                </div>
+              </a>
+            </div>
+
+            <div class="mix col-lg-6 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/eaton.html"
+                class="portfolio-item"
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(9).glb?v=1576708571559"
+                  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+                  alt="A 3D model of a eaton adjusting arm"
+                  background-color="#206491"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Eaton Adjusting Arm</h2>
+                </div>
+              </a>
+            </div>
+
+            <div class="mix col-lg-6 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/cylde.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(10).glb?v=1576708621487"
+                  ios-src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.usdz?v=1569545377878"
+                  alt="A 3D model of a clyde union mount"
+                  background-color="#F9637C"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Clyde Union Mount Plate</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/stool.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(8).glb?v=1576708492127"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a kitchen stool"
+                  background-color="#FBB45C"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Kitchen Stool</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 rened">
+              <a
+                href="https://shivaligulati.glitch.me/tape.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(12).glb?v=1576708966502"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a cassette tape"
+                  background-color="#FE7A66"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Cassette Tape</h2>
+                </div>
+              </a>
+            </div>
+            <div class="mix col-lg-4 col-md-6 web">
+              <a
+                href="https://shivaligulati.glitch.me/snowflake.html"
+                class="portfolio-item "
+              >
+                <model-viewer
+                  src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(16).glb?v=1577000534055"
+                  ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                  alt="A 3D model of a snowflake"
+                  background-color="#45AAB4"
+                  shadow-intensity="1"
+                  camera-controls
+                  interaction-prompt="auto"
+                  auto-rotate
+                  ar
+                  magic-leap
+                  class="home3d"
+                  style="width:100%"
+                >
+                </model-viewer>
+                <div class="pi-inner">
+                  <h2>+ See Snowflake</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </center>
+    <!-- portfolio section end -->
+
+    <!-- footer section start -->
     <footer class="footer-section text-center">
       <div class="container">
         <div class="social-links">
-          <a href="mailto:shivaligulati121@gmail.com"><span class="fa fa-link"></span></a>
-				<a href="https://www.linkedin.com/in/shivali-gulati/"><span class="fa fa-linkedin"></span></a>
-				<a href="https://github.com/shivaligulati"><span class="fa fa-github"></span></a>
+          <a href="mailto:shivaligulati121@gmail.com"
+            ><span class="fa fa-link"></span
+          ></a>
+          <a href="https://www.linkedin.com/in/shivali-gulati/"
+            ><span class="fa fa-linkedin"></span
+          ></a>
+          <a href="https://github.com/shivaligulati"
+            ><span class="fa fa-github"></span
+          ></a>
         </div>
         <div class="copyright">
           Copyright &copy;<script>
@@ -400,10 +490,14 @@
         </div>
       </div>
     </footer>
+    <!-- footer section end -->
 
-    <!-- 💁 Include both scripts below to support all browsers! -->
-
-    <!-- Loads <model-viewer> for modern browsers: -->
+    <!--====== Javascripts & Jquery ======-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
     <script
       type="module"
       src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js"

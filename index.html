@@ -20,6 +20,32 @@
 	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
   <link rel="stylesheet" href="new.css"/>
+   <link rel="stylesheet" href="demo-styles.css" />
+    <!--     	<link rel="stylesheet" href="new.css"/>
+     -->
+    <!-- The following libraries and polyfills are recommended to maximize browser support -->
+    <!-- NOTE: you must adjust the paths as appropriate for your project -->
+
+    <!-- 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63 -->
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    <!-- 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 -->
+    <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+
+    <!-- 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers -->
+    <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script>
+
+    <!-- 💁 OPTIONAL: Fullscreen polyfill is needed to fully support AR features -->
+    <script src="https://unpkg.com/fullscreen-polyfill@1.0.2/dist/fullscreen.polyfill.js"></script>
+
+    <!-- 💁 OPTIONAL: Include prismatic.js for Magic Leap support -->
+    <script src="https://unpkg.com/@magicleap/prismatic/prismatic.min.js"></script>
+
+    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
 
 
 
@@ -69,7 +95,7 @@
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-xl-10 offset-xl-1">
-					<h2 class="section-title">I’m a freelance <span>web and 3D object developer</span> from California</h2>
+					<h2 class="section-title">I’m a freelance <span>web and 3D object developer</span> in California</h2>
 				</div>
 			</div>
 		</div>
@@ -78,8 +104,8 @@
 
 
 	<!-- portfolio section start -->
-	<section class="portfolio-section">
-		<div class="container">
+	<center><section class="portfolio-section">
+ 		<div class="container">
 			<ul class="portfolio-filter controls">
 				<li class="control" data-filter="all">All</li>
 				<li class="control" data-filter=".web">Web design</li>
@@ -87,22 +113,60 @@
 				<li class="control" data-filter=".rened">3D Renedering</li>
 				<li class="control" data-filter=".brand">Brand Identity</li>
 			</ul>
-		</div>                       
+		</div>                        
 		<div class="container-fluid p-md-0 ">
 			<div class="row portfolios-area">
-				<div class="mix col-lg-6 col-md-6 web">
-					<a href="img/portfolio/1.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/1.jpg">
+				<div class="mix col-lg-6 col-md-6 rened">
+          
+          <a href="https://shivaligulati.glitch.me/polarflower.html" class="portfolio-item">
+            <model-viewer
+                      src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(14).glb?v=1576709350443"
+                      ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                      alt="A 3D model of an ornament"
+                      background-color="#038DB2"
+                      shadow-intensity="1"
+                      camera-controls
+                      interaction-prompt="auto"
+                      auto-rotate
+                      ar
+                      magic-leap
+                      class = "home3d"
+                      style = "width:100%"
+                    >
+                    </model-viewer>
 						<div class="pi-inner">
-							<h2>+ See Project</h2>
+							<h2>+ See Polar Flower</h2>
 						</div>						
 					</a>
 				</div>
-				<div class="mix col-lg-6 col-md-6 digital">
-					<a href="img/portfolio/2.jpg" class="portfolio-item set-bg " data-setbg="img/portfolio/2.jpg">
+        
+        
+				<div class="mix col-lg-6 col-md-6 rened">
+					
+          <a href="https://shivaligulati.glitch.me/solarcargear.html" class="portfolio-item">
+            <model-viewer
+                      src="https://cdn.glitch.com/ca1dae3b-1ed2-4505-b2ff-5b9d1cf0186d%2Fundefined%20(13).glb?v=1576709260228"
+                      ios-src="https://cdn.glitch.com/0b088367-cad7-4984-aaca-72479b22f0b3%2Fundefined%20(1).glb?v=1576704704711"
+                      alt="A 3D model of an gear"
+                      background-color="#206491"
+                      shadow-intensity="1"
+                      camera-controls
+                      interaction-prompt="auto"
+                      auto-rotate
+                      ar
+                      magic-leap
+                      class = "home3d"
+                                                style = "width:100%"
+
+                    >
+                    </model-viewer>
 						<div class="pi-inner">
-							<h2>+ See Project</h2>
+							<h2>+ See Solar Car Gear</h2>
 						</div>						
 					</a>
+          
+          
+          
 				</div>
 				<div class="mix col-lg-4 col-md-6 web">
 					<a href="img/portfolio/3.jpg" class="portfolio-item set-bg" data-setbg="img/portfolio/3.jpg">
@@ -148,7 +212,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+  </section></center>
 	<!-- portfolio section end -->
 
 
@@ -177,5 +241,15 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/mixitup.min.js"></script>
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
+   <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer.js"
+    ></script>
+
+    <!-- Loads <model-viewer> for old browsers like IE11: -->
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer@v0.7.2/dist/model-viewer-legacy.js"
+    ></script>
 </body>
 </html>
