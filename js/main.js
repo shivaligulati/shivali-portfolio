@@ -130,5 +130,83 @@ if($().circleProgress){
 
 
 
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop()
+var pageBottom = pageTop + $(window).height()
+var tags = $(".page-section")
+
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i]
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible")
+} else {
+  $(tag).removeClass("visible")
+}
+}
+})
 
 
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop()
+var pageBottom = pageTop + $(window).height()
+var tags = $(".portfolio-section")
+
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i]
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible")
+} else {
+  $(tag).removeClass("visible")
+}
+}
+})
+
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop()
+var pageBottom = pageTop + $(window).height()
+var tags = $(".card")
+
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i]
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible")
+} else {
+  $(tag).removeClass("visible")
+}
+}
+})
+
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop()
+var pageBottom = pageTop + $(window).height()
+var tags = $("model-viewer")
+
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i]
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible")
+} else {
+  $(tag).removeClass("visible")
+}
+}
+})
+
+$(document).on("scroll", function () {
+var pageTop = $(document).scrollTop()
+var pageBottom = pageTop + $(window).height()
+var tags = $("footer")
+
+for (var i = 0; i < tags.length; i++) {
+var tag = tags[i]
+
+if ($(tag).position().top < pageBottom) {
+$(tag).addClass("visible")
+} else {
+  $(tag).removeClass("visible")
+}
+}
+})
