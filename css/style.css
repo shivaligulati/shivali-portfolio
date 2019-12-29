@@ -69,8 +69,12 @@ ol {
 
 .section-title {
   font-size: 60px;
-      letter-spacing: 1px;
+  letter-spacing: 1px;
   margin-bottom: 2%;
+}
+
+#titles{
+    margin-bottom: -0.5%;
 }
 
 .section-title span {
