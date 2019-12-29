@@ -69,13 +69,9 @@ ol {
 
 .section-title {
   font-size: 60px;
-  animation: animated-text 1.5s steps(100,end) 1s 1 normal both;
+      letter-spacing: 1px;
+  margin-bottom: 2%;
 }
-
-/* @keyframes animated-text{
-  from{width: 0;}
-  to{width: 100%;}
-} */
 
 .section-title span {
   color: #979797;
@@ -357,6 +353,7 @@ ol {
 .site-logo {
   font-size: 24px;
   padding-top: 20px;
+    letter-spacing: 0.75px;
 }
 
 .main-menu ul {
@@ -739,6 +736,7 @@ ol {
   }
   .section-title {
     font-size: 45px;
+    letter-spacing: 1px;
   }
   .portfolio-filter {
     text-align: center;
@@ -749,5 +747,6 @@ ol {
 @media only screen and (max-width: 479px) {
   .section-title {
     font-size: 30px;
+    letter-spacing: 1px;
   }
 }

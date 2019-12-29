@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Muli, Helvetica, Arial, sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-family: Muli, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.75px;
 }
 
 #signature {
@@ -22,7 +29,7 @@
 .postimg {
   width: 100%;
   height: auto;
-  margin-top: -5%;
+  margin-top: -4%;
 }
 
 .titleofpost {
@@ -71,8 +78,12 @@
   height: 300px;
 }
 
+a{
+  color: gray;
+}
+
 a:hover {
-  color: red;
+  color: black;
 }
 
 body {
@@ -158,4 +169,62 @@ body {
 .codephoto{
   width: 100%;
   height:  auto;
+}
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
+
+.page-section,.portfolio-section, footer, model-viewer {
+opacity: 0;
+transform: translate(0, 20px); 
+transition: all 1s;
+}
+
+.page-section.visible,.portfolio-section.visible, footer, model-viewer {
+opacity: 1;
+transform: translate(0, 0); 
 }
