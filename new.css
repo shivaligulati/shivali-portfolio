@@ -1,14 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Rufina:400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sintony&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Muli, Helvetica, Arial, sans-serif;
-
+/*   font-family: "Muli", sans-serif; */
+  font-family: 'Sintony', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6,p{
-  font-family: Muli, Helvetica, Arial, sans-serif;
-  letter-spacing: 0.75px;
+h1,
+h2,
+h3,
+span {
+  font-family: "Rufina", serif;
+  letter-spacing: 1px;
+  font-weight: 550;
+}
+
+p {
+/*   font-family: "Muli", sans-serif; */
+  font-family: 'Sintony', sans-serif;
+}
+
+h4, h5, h6 {
+    font-family: 'Sintony', sans-serif;
+  font-weight: lighter;
+}
+
+h5{
+  font-weight: normal;
+}
+
+#font{
+  font-family: "Rufina", serif;
+  letter-spacing: 1px;
+  font-weight: 550;
 }
 
 #signature {
@@ -63,14 +91,14 @@ h1,h2,h3,h4,h5,h6,p{
   }
 }
 .aboutphotos {
-/*   width: 50%; */
-/*   height: 350px; */
+  /*   width: 50%; */
+  /*   height: 350px; */
   transition: 0.3s;
   -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
 }
 
 .aboutphotos:hover {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .fullphotos {
@@ -78,7 +106,7 @@ h1,h2,h3,h4,h5,h6,p{
   height: 300px;
 }
 
-a{
+a {
   color: gray;
 }
 
@@ -100,16 +128,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
 .some-page-wrapper {
   margin: 15px;
 }
@@ -129,26 +147,21 @@ body {
 }
 
 .blue-column {
-
 }
 
 .green-column {
-
 }
 
-.home3d{
+.home3d {
   width: 100%;
   height: 100%;
 }
 
-
-
-#space{
+#space {
   margin-top: 8%;
 }
 
-#home{
-  
+#home {
 }
 
 .lang {
@@ -158,74 +171,79 @@ body {
   margin: 0.5%;
 }
 
-.lang:hover{
+.lang:hover {
   opacity: 0.5;
 }
 
-#langbox{
+#langbox {
   margin-top: -0.07%;
 }
 
-.codephoto{
+.codephoto {
   width: 100%;
-  height:  100%;
+  height: 100%;
 }
 
-
-
-
-
-
-
 @keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0,40px,0)
-    }
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
 
-    to {
-        transform: translate3d(0,0,0);
-        opacity: 1
-    }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-fill-mode: both
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
 }
 
 .animatedFadeInUp {
-    opacity: 0
+  opacity: 0;
 }
 
 .fadeInUp {
-    opacity: 0;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.page-section,
+footer, {
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
+
+.page-section.visible,
+footer, {
+  opacity: 1;
+  transform: translate(0, 0);
 }
 
 
-
-.page-section,.portfolio-section, footer, model-viewer {
-opacity: 0;
-transform: translate(0, 20px); 
-transition: all 1s;
+#back {
+  /*   width: 50%; */
+  /*   height: 350px; */
+  transition: 0.3s;
+  -moz-box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.15);
 }
 
-.page-section.visible,.portfolio-section.visible, footer, model-viewer {
-opacity: 1;
-transform: translate(0, 0); 
+#back:hover {
+  transform: scale(0.95);
 }
-
